@@ -6,6 +6,8 @@ public class HelloWorld {
 		System.out.println("Hello  Nita from Different project!!");
 		System.out.println("Hello java world !!");
 		System.out.println("Hello git world !!");
+		System.out.println("Hello JAVA world !!");
+		System.out.println("Hello GIT world !!");
 	}
 
 }
