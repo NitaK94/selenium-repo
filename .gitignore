@@ -2,3 +2,8 @@ HelloWorld/bin/HelloWorld.class
 HelloWorld/.settings/
 HelloWorld/.project
 HelloWorld/.classpath
+SeleniumMavanFramework/.classpath
+SeleniumMavanFramework/.gitignore
+SeleniumMavanFramework/.project
+SeleniumMavanFramework/.settings/
+SeleniumMavanFramework/test-output/
