@@ -35,11 +35,14 @@ public class ContactTest extends BaseClass {
 		System.out.println("go to contact");
 		HomePage hp = PageFactory.initElements(driver, HomePage.class);
 		hp.navigateToContactsPage();
+		
 		//click on create contact link
 		Contacts cat = PageFactory.initElements(driver, Contacts.class);
 		cat.Contacts(contactdata);
+		
 		System.out.println("contact created ");
 		ContactInformation ci = PageFactory.initElements(driver, ContactInformation.class);
+		
 		//verification
 		String actconatctLastNAme = ci.getLastNameContactInfo().getText();
 		System.out.println(actconatctLastNAme);

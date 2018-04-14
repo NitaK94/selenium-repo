@@ -45,6 +45,7 @@ public class BaseClass {
 		
 @BeforeMethod(groups ={"Regerssion Test","Smoke Test"})
 public void  configBM() throws Throwable{
+	System.out.println("login pass");
 	CommonUtil g = new CommonUtil();
 	driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 	Properties p = g.getdropdataObj();
