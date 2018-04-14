@@ -11,7 +11,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class CommonUtility {
   public String getExcelData(String sheetnum , int rownum, int cellnum) throws Throwable{
-	  FileInputStream fis = new FileInputStream("./data/TestData.xlsx");
+	  FileInputStream fis = new FileInputStream("./dataData/TestData.xlsx");
 	  Workbook  wb = WorkbookFactory.create(fis);
 	  Sheet sh = wb.getSheet(sheetnum);
 	  Row row = sh.getRow(rownum);
@@ -20,7 +20,7 @@ public class CommonUtility {
 	  
   }
   public Properties getpropertiesData() throws Throwable{
-	  FileInputStream fis = new FileInputStream("./data/TestData.properties");
+	  FileInputStream fis = new FileInputStream("./dataData/TestData.properties");
 	  Properties pro = new Properties();
 	  pro.load(fis);
 	return pro;
