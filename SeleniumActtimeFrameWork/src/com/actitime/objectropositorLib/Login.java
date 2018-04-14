@@ -16,13 +16,13 @@ public WebElement getPwdEdt() {
 public WebElement getLoginEdt() {
 	return LoginEdt;
 }
-public void Lonin(String username, String pwd){
+public void login(String username, String pwd){
 	  UserEdt.sendKeys(username);
 	  PwdEdt.sendKeys(pwd);
 	  LoginEdt.click();
 }
 
-public void Lonin(){
+public void login(){
 	 LoginEdt.click(); 
 }
 
