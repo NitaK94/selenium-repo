@@ -2,23 +2,16 @@
 <testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17381" started-at="2018-04-14T17:52:08Z" finished-at="2018-04-14T17:52:25Z">
+  <suite name="Default suite" duration-ms="172" started-at="2018-04-14T17:55:31Z" finished-at="2018-04-14T17:55:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17381" started-at="2018-04-14T17:52:08Z" finished-at="2018-04-14T17:52:25Z">
+    <test name="Default test" duration-ms="172" started-at="2018-04-14T17:55:31Z" finished-at="2018-04-14T17:55:31Z">
       <class name="com.actitime.testscript.CreateCustomer">
-        <test-method status="FAIL" signature="configBC()[pri:0, instance:com.actitime.testscript.CreateCustomer@46d56d67]" name="configBC" is-config="true" duration-ms="0" started-at="2018-04-14T23:22:08Z" finished-at="2018-04-14T23:22:08Z">
-          <exception class="java.io.FileNotFoundException">
-            <message>
-              <![CDATA[.\data\TestData.properties (The system cannot find the path specified)]]>
-            </message>
+        <test-method status="FAIL" signature="configBC()[pri:0, instance:com.actitime.testscript.CreateCustomer@46d56d67]" name="configBC" is-config="true" duration-ms="0" started-at="2018-04-14T23:25:31Z" finished-at="2018-04-14T23:25:31Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: .\data\TestData.properties (The system cannot find the path specified)
-	at java.io.FileInputStream.open(Native Method)
-	at java.io.FileInputStream.<init>(FileInputStream.java:138)
-	at java.io.FileInputStream.<init>(FileInputStream.java:93)
-	at com.actitime.genericLib.CommonUtility.getpropertiesData(CommonUtility.java:23)
-	at com.actitime.genericLib.BaseClass.configBC(BaseClass.java:25)
+              <![CDATA[java.lang.NullPointerException
+	at com.actitime.genericLib.BaseClass.configBC(BaseClass.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -45,26 +38,26 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method status="SKIP" signature="configBM()[pri:0, instance:com.actitime.testscript.CreateCustomer@46d56d67]" name="configBM" is-config="true" duration-ms="0" started-at="2018-04-14T23:22:25Z" finished-at="2018-04-14T23:22:25Z">
+        <test-method status="SKIP" signature="configBM()[pri:0, instance:com.actitime.testscript.CreateCustomer@46d56d67]" name="configBM" is-config="true" duration-ms="0" started-at="2018-04-14T23:25:31Z" finished-at="2018-04-14T23:25:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method status="SKIP" signature="CreatTest()[pri:0, instance:com.actitime.testscript.CreateCustomer@46d56d67]" name="CreatTest" duration-ms="60" started-at="2018-04-14T23:22:25Z" finished-at="2018-04-14T23:22:25Z">
+        <test-method status="SKIP" signature="CreatTest()[pri:0, instance:com.actitime.testscript.CreateCustomer@46d56d67]" name="CreatTest" duration-ms="0" started-at="2018-04-14T23:25:31Z" finished-at="2018-04-14T23:25:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreatTest -->
-        <test-method status="SKIP" signature="configAM()[pri:0, instance:com.actitime.testscript.CreateCustomer@46d56d67]" name="configAM" is-config="true" duration-ms="8" started-at="2018-04-14T23:22:25Z" finished-at="2018-04-14T23:22:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAM -->
-        <test-method status="SKIP" signature="configAC()[pri:0, instance:com.actitime.testscript.CreateCustomer@46d56d67]" name="configAC" is-config="true" duration-ms="0" started-at="2018-04-14T23:22:25Z" finished-at="2018-04-14T23:22:25Z">
+        <test-method status="SKIP" signature="configAC()[pri:0, instance:com.actitime.testscript.CreateCustomer@46d56d67]" name="configAC" is-config="true" duration-ms="0" started-at="2018-04-14T23:25:31Z" finished-at="2018-04-14T23:25:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
+        <test-method status="SKIP" signature="configAM()[pri:0, instance:com.actitime.testscript.CreateCustomer@46d56d67]" name="configAM" is-config="true" duration-ms="0" started-at="2018-04-14T23:25:31Z" finished-at="2018-04-14T23:25:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
       </class> <!-- com.actitime.testscript.CreateCustomer -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

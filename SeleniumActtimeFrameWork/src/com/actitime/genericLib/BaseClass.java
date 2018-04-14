@@ -20,16 +20,19 @@ public class BaseClass {
 	CommonUtility cp = new CommonUtility();
       @BeforeClass
       public void configBC() throws Throwable{
+    	  
     	//System.setProperty("Webdriver.chromeDriver.exe", "./resource/chromedriver.exe");
     	driver = new  FirefoxDriver();
+    	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     	Properties pro = cp.getpropertiesData();
   	  String urldata = pro.getProperty("urldata");
   	  driver.get(urldata);
-    	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+    	
     	  
       }
       @BeforeMethod
       public  void configBM() throws Throwable{
+    	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     	 Properties pro = cp.getpropertiesData();
     	  String username = pro.getProperty("username"); 
     	  String password = pro.getProperty("password");
