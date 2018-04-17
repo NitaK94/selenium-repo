@@ -30,13 +30,13 @@ public class BaseClass {
 		  
 		  else if(pBrowser.equals("chrome"))
 		     {
-			    System.setProperty("webdriver.chrome.driver","./srcmain\\resources\\chromedriver.exe");
+			    System.setProperty("webdriver.chrome.driver","./src/main/resources/chromedriver.exe");
 				driver = new ChromeDriver();
 		     }
 		  
 		  else if(pBrowser.equals("ie"))
 		   {
-			  System.setProperty("webDriver.IE.driver",".\\src\\main\\resources\\IEDriverServer.exe");
+			  System.setProperty("webDriver.IE.driver","./src/main/resources/IEDriverServer.exe");
 			}
 		  
 		  else
