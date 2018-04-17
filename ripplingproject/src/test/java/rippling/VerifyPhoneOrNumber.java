@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import com.genricLib.BaseClass;
 
 public class VerifyPhoneOrNumber extends BaseClass {
+	
 	@Test
 	public void verifyPhoneNumberWithValidData(){
 		Reporter.log("execute  =========> verifyPhoneNumberWithValidData",true);

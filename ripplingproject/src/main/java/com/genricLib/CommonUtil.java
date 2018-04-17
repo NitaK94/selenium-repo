@@ -5,15 +5,15 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
-
-
 public class CommonUtil {
-	public String getData(String Sheetnum,int RowNum,int ColNum) throws Throwable  {
+	public String getData(String Sheetnum,int RowNum,int ColNum) throws Throwable {
 		String path = "./src/test/resources/data/TestData.xlsx";
 		//get the location of the xmls file
 				
@@ -30,7 +30,7 @@ public class CommonUtil {
 	}
 		
 	 public Properties getdropdataObj() throws Throwable{
-		String path = "./src/test/resources/data/testdata.properties";
+		String path = "./src/test/resources/testData/testdata.properties";
 		FileInputStream fls1 = new FileInputStream(path);
 		Properties prop = new Properties();
 		prop.load(fls1);

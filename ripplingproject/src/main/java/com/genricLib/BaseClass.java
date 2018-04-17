@@ -25,7 +25,7 @@ public class BaseClass {
 		     
 		  if(pBrowser.equals("FireFox"))
 		      {
-			    driver = new FirefoxDriver();
+			    driver = new FirefoxDriver();  
 		      }
 		  
 		  else if(pBrowser.equals("chrome"))
