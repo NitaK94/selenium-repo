@@ -13,8 +13,8 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class CommonUtil {
-	public String getData(String Sheetnum,int RowNum,int ColNum) throws Throwable {
-		String path = "./src/test/resources/data/TestData.xlsx";
+	public int getData(String Sheetnum,int RowNum,int ColNum) throws Throwable {
+		String path = "./src/test/resources/testData/TestData.xlsx";
 		//get the location of the xmls file
 				
 		FileInputStream fls = new FileInputStream(path);
@@ -25,7 +25,8 @@ public class CommonUtil {
 				//get the control in sheet 3 in row
 				Row row = sh.getRow(RowNum);
 				//read date from 2,3,4 col
-				String data = row.getCell(ColNum).getStringCellValue();
+				int data = (int) row.getCell(ColNum).getNumericCellValue();
+				
 				return data;
 	}
 		

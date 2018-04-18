@@ -5,11 +5,11 @@
     <classes>
       <class name="rippling.VerifyPhoneOrNumber">
         <methods>
-          <include name="verifyPhoneNumberWithInValidData"/>
+          <include name="configBM"/>
           <include name="verifyPhoneNumberWithValidData"/>
-          <include name="verifyNewNumberWithValidData"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
           <include name="configBC"/>
-          <include name="verifyNewNumberWithInValidData"/>
         </methods>
       </class> <!-- rippling.VerifyPhoneOrNumber -->
     </classes>
